@@ -5,6 +5,9 @@ export
  	const HomeContent =
      `
         <div class="home">
+        <div>
+        <a href="https://github.com/takoba18/webapp_final_project">https://github.com/takoba18/webapp_final_project</a>
+    </div>
         <h1> Welcome to my site </h1>
         <p>If you are a sports fan this website is for you</p>
         <div id="searchWrapper">
