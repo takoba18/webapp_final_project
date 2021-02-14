@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Page App</title>
+    <link rel="shortcut icon" href="#">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="static/css/pages.css">
+</head>
+<body>
+    <nav class="nav">
+        <a href="#" class="nav__link" data-link>Home</a>
+        <button class="browse-btn">Browse
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="#countries" class="nav__link" data-link>Countries</a>
+            <a href="#leagues" class="nav__link" data-link>Leagues</a>
+            <a href="#players" class="nav__link" data-link>Players</a>
+          </div>
+        <a href="#login" class="nav__link" data-link>Log In</a>
+        <a href="#register" class="nav__link" data-link>Sign Up</a>
+        <a href="#forum" class="nav__link" data-link>Forum</a>
+    </nav>
+    <div id="app"></div>
+    
+    <script type="module" src="static/js/router.js"></script>
+    <script>
+        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+        var dropdown = document.getElementsByClassName("browse-btn");
+        var i;
+        for (i = 0; i < dropdown.length; i++) {
+          dropdown[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+          } else {
+          dropdownContent.style.display = "block";
+          }
+          });
+        }
+        </script>
+</body>
+</html>

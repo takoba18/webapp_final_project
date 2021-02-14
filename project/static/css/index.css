@@ -1,0 +1,136 @@
+body {
+    --nav-width: 200px;
+    margin: 0 0 0 var(--nav-width);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: var(--nav-width);
+    height: 100vh;
+    background: #222222;
+}
+
+.nav__link {
+    display: block;
+    padding: 12px 18px;
+    text-decoration: none;
+    color: #eeeeee;
+    font-weight: 500;
+}
+
+.nav__link:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+#app {
+    margin: 2em;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+a {
+    color: #009579;
+}
+.dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+  }
+  .active {
+    background-color: green;
+    color: white;
+  }
+  .nav a:hover, .browse-btn:hover {
+    color: #f1f1f1;
+  }
+  .browse-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #eeeeee;;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+  .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+    color: #eeeeee;
+  }
+.home_content{
+  width: 100%;
+  height: 90%;
+  position: relative;
+  }
+  .home_list_container {
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: center;
+  }
+  .home_list_img {
+   height:50%;
+  width:100%  }
+  .home_list_card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.82);
+    transition: 0.3s;
+    width: 15%;
+    float: left;
+    margin: 2%;
+    height: 40%;
+    cursor: pointer;
+  }
+  #searchBar {
+    width: 100%;
+    height: 32px;
+    border-radius: 3px;
+    border: 1px solid #eaeaea;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+#searchWrapper {
+    position: relative;
+}
+
+#searchWrapper::after {
+    content: '🔍';
+    position: absolute;
+    top: 7px;
+    right: 15px;
+}
+@media only screen and (max-width: 850px) {
+  .home_list_img{
+    height: 60%;
+    width: 60%;
+  }
+  .home_content{
+    height: 100%;
+  }
+  .home_list_card{
+    width: 21% !important;
+    height: 200px !important;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .home_list_card{
+    width: 29% !important;
+    height: 200px !important;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .home_list_card {
+    width: 45% !important;
+    height: 200px !important;
+  }
+}

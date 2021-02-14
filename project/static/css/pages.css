@@ -1,0 +1,101 @@
+.teams_content,.players_content,.countries_content,.search_content,.details_content,.leagues.content{
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: center;
+}
+.teams_list_card, .players_list_card .countries_list_card,.search_list_card,.details_list_card,
+.league_list_cards{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.82);
+    transition: 0.3s;
+    width: 15%;
+    float: left;
+    margin: 2%;
+    height: 40%;
+    cursor: pointer;
+   
+}
+.teams_list_img,.players_list_img,.details_list_img{
+ height:100%;
+ width:60% 
+}
+.teams_list_container, .players_list_container,.countries_list_container,.search_list_container,.details_list_container,.league_list_container{
+    display: flex;
+    padding: 2px 16px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50%;
+    overflow-wrap: anywhere;
+    font-size: x-large;
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  .btn-login {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .btn-login:hover {
+    opacity: 0.8;
+  }
+
+  
+  .container {
+    padding: 16px;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+    @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    
+  }
+  @media only screen and (max-width: 850px) {
+    .teams_list_img,.players_list_img,.details_list_img{
+      height: 60%;
+      width: 60%;
+    }
+    .teams_content,.players_content,.countries_content,.search_content,.details_content,.leagues.content{
+      height: 100%;
+    }
+   
+    .teams_list_card, .players_list_card .countries_list_card,.search_list_card,.details_list_card,
+.league_list_cards {
+      width: 21% !important;
+      height: 200px !important;
+    }
+  }
+  
+  @media only screen and (max-width: 650px) {
+    .teams_list_card, .players_list_card .countries_list_card,.search_list_card,.details_list_card,
+    .league_list_cards{
+      width: 29% !important;
+      height: 200px !important;
+    }
+  }
+ 
+  @media only screen and (max-width: 500px) {
+    .teams_list_card, .players_list_card .countries_list_card,.search_list_card,.details_list_card,
+    .league_list_cards {
+      width: 45% !important;
+      height: 200px !important;
+    }
+  }
